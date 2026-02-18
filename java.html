@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+    </head>    
+        <body>
+            <h1>JS functions</h1>
+            <button onclick="show()">click me!</button>
+            <p id="demo"></p>
+           
+            <script>
+                function add(a,b){
+                    return a+b;
+                }
+                function show(){
+                    let sum = add(9,3);
+                    document.getElementById("demo").innerHTML=sum;
+                }
+                function sub(a,b){
+                    return a-b;
+                }
+                function mult(a,b){
+                    return a*b;
+                }
+                function div(a,b){
+                    return a/b;
+                }
+
+                
+                let subt = sub(8,9);
+                let multi = mult(8,2);
+                let divi = div(8,3);
+
+                
+
+                document.getElementById("demo").innerHTML=sum +" and "+subt + "mutiplication is " + multi +"&" + divi;
+                // document.getElementById("demo").innerHTML=subt;
+                // document.getElementById("demo").innerHTML=multi;
+                // document.getElementById("demo").innerHTML=divi;
+
+            </script>
+            <script>
+                function sum(...args){
+                    let sum=0;
+                    for(let arg of args){
+                        sum+=arg;}
+                        return sum;
+                }
+                let x=sum(4,5,45,9,98,21,83);
+                document.getElementById("demo").innerHTML=x;
+            </script>
+        </body>
+    
+</html>
